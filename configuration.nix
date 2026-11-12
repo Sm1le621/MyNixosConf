@@ -153,7 +153,6 @@
   	discord
   	vscode
   	telegram-desktop
-  	claude-code
   ]);
   
   programs.steam = { enable = true; package = unstable.steam; };

@@ -8,12 +8,17 @@
   # Разрешаем Home Manager управлять самим собой
   programs.home-manager.enable = true;
 
-  home.packages = (with pkgs; [
+  home.packages =
+  #=====STABLE===== 
+  (with pkgs; [
     cmatrix
     cava
     flatpak
-  ]) ++ (with unstable; [
-    #bonsai
+  ]) 
+  ++
+  #=====UNSTABLE=====
+  (with unstable; [
+    claude-code
   ]);
 
   imports = [

@@ -43,7 +43,7 @@
             {
             	home-manager.useGlobalPkgs = true;
             	home-manager.useUserPackages = true;
-            	home-manager.extraSpecialArgs = { inherit stable unstable; };
+            	home-manager.extraSpecialArgs = { stable = stable-pkgs; unstable = unstable-pkgs; };
             	home-manager.users.sm1le = import ./homemanager.nix;
             }
           ];
