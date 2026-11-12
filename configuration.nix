@@ -136,27 +136,15 @@
     unzip
     unrar
     xdg-user-dirs
-    alacritty
-    viber
-    obsidian
-    spotify
-    chromium
     btop
-    yazi
   ])
   #==UNSTABLE-BRANCH-PKGS==
   ++
   (with unstable; [
-  	wordcraft
-	gridcraft
-  	unityhub
-  	discord
-  	vscode
-  	telegram-desktop
+  	#program-name
   ]);
-  
+
   programs.steam = { enable = true; package = unstable.steam; };
-  services.ollama = { enable = true; loadModels = [ "qwen2.5:3b" ]; };
 
   virtualisation.docker.enable = true;
 
