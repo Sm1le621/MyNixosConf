@@ -37,6 +37,7 @@
   #-------IMPORTS-MODULES----------
   imports = [
      ./home-modules/git.nix
+     ./home-modules/alacritty.nix
    ];
 
   #-------STATE-VERSION--------
