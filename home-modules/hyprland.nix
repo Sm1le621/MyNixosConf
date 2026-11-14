@@ -1,8 +1,9 @@
-{ pkgs, ... }: 
+{ pkgs, unstable, ... }: 
 
 {
   wayland.windowManager.hyprland = {
     enable = true;
+    package = unstable.hyprland;
     # Отключаем системный вайндредер, если ставим через HM, либо оставляем по умолчанию
     systemd.enable = true; 
     

@@ -3,11 +3,17 @@
 {
   programs.git = {
     enable = true;
-    userName = "Sm1le621";
-    userEmail = "sashapolyvyaniy@gmail.com";
-    extraConfig = {
-      init.defaultBranch = "main";
-      pull.rebase = true;
+    settings = {
+      user = {
+        name = "Sm1le621";
+        email = "sashapolyvyaniy@gmail.com";
+      };
+      init = {
+        defaultBranch = "main";
+      };
+      pull = {
+        rebase = true;
+      };
     };
   };
 }
