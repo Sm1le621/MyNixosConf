@@ -15,13 +15,16 @@
     cmatrix
     cava
     flatpak
-    alacritty
     yazi
     chromium
   ]) 
   ++
   #=====UNSTABLE=====
   (with unstable; [
+	hyprland
+	quickshell
+	rofi
+	swww
     claude-code
     wordcraft
     gridcraft

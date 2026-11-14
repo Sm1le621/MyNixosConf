@@ -145,7 +145,8 @@
   ]);
 
   programs.steam = { enable = true; package = unstable.steam; };
-
+  programs.hyprland = { enable = true; package = unstable.hyprland; };
+  
   virtualisation.docker.enable = true;
 
   # --------------SUID--------------
