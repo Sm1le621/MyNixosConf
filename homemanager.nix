@@ -21,9 +21,6 @@
   ++
   #=====UNSTABLE=====
   (with unstable; [
-	quickshell
-	rofi
-	awww
     claude-code
     wordcraft
     gridcraft
@@ -40,8 +37,6 @@
   imports = [
      ./home-modules/git.nix
      ./home-modules/alacritty.nix
-     ./home-modules/hyprland.nix
-     ./home-modules/quickshell.nix
    ];
 
   #-------STATE-VERSION--------
